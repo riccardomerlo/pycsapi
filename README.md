@@ -1,5 +1,6 @@
 # Unofficial Creditsafe Connect API Documentation
--- generated from `https://raw.githubusercontent.com/creditsafe/connect-docs/master/cs_connectv1-15.json`
+> Generated from `https://raw.githubusercontent.com/creditsafe/connect-docs/master/cs_connectv1-15.json`
+
 Last Updated: 09th July 2024
 
 ## Introduction
@@ -34,9 +35,9 @@ Python 2.7 and 3.4+
 If the python package is hosted on Github, you can install directly from Github
 
 ```sh
-pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
+pip install git+https://github.com/riccardomerlo/pycsapi.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/riccardomerlo/pycsapi.git`)
 
 Then import the package:
 ```python
@@ -114,6 +115,15 @@ try:
     configuration.api_key_prefix["accessToken"] = "Bearer"
 except ApiException as e:
     print(f"Exception when calling AuthenticationApi->authenticate: {e}\n")
+```
+
+Remember to set the Authentication `Token` in the `ApiClient` object.
+
+```python
+api_client = pycsapi.ApiClient(configuration)
+api_client.set_default_header(
+    "Authorization", configuration.get_api_key_with_prefix("accessToken")
+)
 ```
 
 
