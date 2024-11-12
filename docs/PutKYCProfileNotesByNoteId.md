@@ -1,0 +1,17 @@
+# PutKYCProfileNotesByNoteId
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**id** | **str** | Id of the note | [optional] 
+**body** | **str** | Body of the note | [optional] 
+**is_archived** | **bool** | Value indicating whether the note is archived | [optional] 
+**created_at** | **datetime** | Note created time | [optional] 
+**created_by_id** | **int** | Id of the user who created note | [optional] 
+**created_by** | **str** | Name of the user who created note | [optional] 
+**modified_at** | **datetime** | Note last updated time | [optional] 
+**modified_by_id** | **int** | Id of the user who last modified the note | [optional] 
+**modified_by** | **str** | Name of the user who last modified the note | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

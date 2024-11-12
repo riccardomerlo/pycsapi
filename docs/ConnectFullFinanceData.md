@@ -1,0 +1,15 @@
+# ConnectFullFinanceData
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**correlation_id** | **str** | A unique ID assigned to this request. | [optional] 
+**safe_number** | **str** | Safe Number - Identifier for Companies in Creditsafe&#x27;s Home Countries. | [optional] 
+**credit_safe** | [**ConnectFootprintDataFinanceCreditSafe**](ConnectFootprintDataFinanceCreditSafe.md) |  | [optional] 
+**overall_aggregations** | [**ConnectCcdsOverallAggregations**](ConnectCcdsOverallAggregations.md) |  | [optional] 
+**history** | [**list[ConnectCcdsFullHistory]**](ConnectCcdsFullHistory.md) | List of accounts connected to the company, snapshot of account at point in time each month. | [optional] 
+**financial_indicator** | [**ConnectFullFinanceDataFinancialIndicator**](ConnectFullFinanceDataFinancialIndicator.md) |  | [optional] 
+**footprint_data** | [**ConnectFullFinanceDataFootprintData**](ConnectFullFinanceDataFootprintData.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
